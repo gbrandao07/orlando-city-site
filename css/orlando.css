@@ -4,10 +4,19 @@
 	font-size: 1em;
 }
 
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+
+
 header {
 	width: 100%;
 	height: 150px;
-	background-color: #5E299A;
+	background-color: rgba(94, 41, 154, .9);
+	z-index: 2; /* profundidade */
+	position: relative;
 }
 header .container {
 	position: relative;
@@ -116,7 +125,7 @@ header #logotipo {
 }
 
 #menu {
-	margin: 26px 0;
+	margin: 12px 0;
 }
 
 #menu li.search {
@@ -132,3 +141,63 @@ header #logotipo {
 #menu li.search input::-webkit-input-placeholder {
 	color: #fff;
 }
+
+#menu li.search button {
+	border: none;
+	background: none;
+}
+
+#menu li.search button i {
+	font-size: 16px;
+	color: rgba(255, 255, 255, .5); /* 50% de transparencia */
+}
+
+#menu li.search .input-group {
+	top: 8px;
+}
+
+#banner {
+	width: 100%;
+	height: 728px;
+	position: relative;
+	background: url("../img/banner.jpg") no-repeat;
+	background-position: 0px -110px;
+	top: -130px;
+}
+
+#banner h1 {
+	color: #FFF;
+	top: 300px; /* top so funciona com position relative */
+	position: relative;
+	font-size: 92px;
+	text-shadow: 2px 2px 2px;
+	font-family: "OpenSans-Light";
+	margin-left: 50px;
+}
+
+#banner h1 small {
+	font-size: 32px;	
+	display: block; /* mostra abaixo do item anterior, na vertical */
+	color: #FFF;
+	font-family: "OpenSans";
+	font-weight: bold;
+	margin-left: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
