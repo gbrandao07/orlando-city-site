@@ -269,5 +269,22 @@
 
 	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<script>
+		
+		// prologo do jQuery (executa quando a pagina estiver carregada)
+		$(document).ready(function() {
+			alert("jQuery OK!");
+		});
+
+		$("#logotipo").on("mouseover", function() {
+			//console.log("passou o mouse no logotipo");
+			$("#banner h1").css({"color": "red", "font-size": "12em", "transition": "1s"});
+		}).on("mouseout", function() {
+			$("#banner h1").css({"color": "#FFF", "font-size": "92px", "transition": "1s"});
+		});
+
+	</script>
+
 </body>
 </html>

@@ -111,6 +111,7 @@ header .header-black li a {
 header #logotipo {
 	position: absolute;
 	top: 20px;
+	z-index: 3;
 }
 
 #menu li {
